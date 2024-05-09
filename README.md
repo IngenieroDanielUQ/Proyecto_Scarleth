@@ -1,6 +1,6 @@
 # proyecto_scarleth
 
- Taller Interfaces: Exposición personalizada
+ Taller Interfaces: Exposición personalizada sobre dispositivos.
 
 # Autores
 
