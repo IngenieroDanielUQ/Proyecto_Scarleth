@@ -1,14 +1,12 @@
 package co.edu.uniquindio.poo;
 
-public class Laptop extends Dispositivo implements Bluetooth, Internet, Energia{
-
+public class Laptop extends Dispositivo implements Bluetooth, Internet, Energia {
     private int duracionBateria;
-    private boolean conexion;
 
-    public Laptop(String nombre, String modelo,int duracionBateria, boolean conexion) {
-        super(nombre, modelo);
+    public Laptop(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean enchufado,
+            int duracionBateria) {
+        super(nombre, modelo, sincronizacion, conexion, enchufado, enchufado);
         this.duracionBateria = duracionBateria;
-        this.conexion = conexion;
     }
 
     public int getDuracionBateria() {
@@ -19,33 +17,23 @@ public class Laptop extends Dispositivo implements Bluetooth, Internet, Energia{
     public void setDuracionBateria(int duracionBateria) {
         this.duracionBateria = duracionBateria;
     }
-    
+
     @Override
     public void conectarDispositivo() {
-        System.out.println(modelo + " Conectado");
+        System.out.println("Estado de conexion bluetooth: "
+                + (conexion ? "Dispositivo vinculado" : "Dispositivo desvinculado"));
     }
 
     @Override
-    public void desconectarDispositivo() {
-        System.out.println(modelo + " desconectado");
-    }
-
-    @Override
-    public void autenticacion(){
-        System.out.println("Estado de conexion: " + (conexion ? "Dispositivo aceptado" : "Dispositivo rechazado"));
+    public void autenticacion() {
+        System.out.println("Estado de autenticación de red: "
+                + (autenticacion ? "Dispositivo aceptado" : "Dispositivo rechazado"));
     }
 
     @Override
     public void dispositivoEnchufado() {
-        System.out.println("Estado de la batería: 81% restante - 6H 3min" + "\n");
+        System.out.println("Estado de la batería:: "
+                + (enchufado ? "81% restante - 6H 3min" + "\n" : "Cargando..." + "\n"));
     }
 
-    public boolean isConexion() {
-        return conexion;
-    }
-
-    public void setConexion(boolean conexion) {
-        this.conexion = conexion;
-    }
-    
 }

@@ -3,12 +3,14 @@ package co.edu.uniquindio.poo;
 public class SmartTv extends Dispositivo implements Internet, Energia {
     private int pulgadas;
 
-    public SmartTv(String nombre, String modelo, int pulgadas) {
-        super(nombre, modelo);
+    public SmartTv(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean autenticacion,
+            boolean enchufado, int pulgadas) {
+        super(nombre, modelo, sincronizacion, conexion, autenticacion, enchufado);
+        this.pulgadas = pulgadas;
     }
 
     public int getPulgadas() {
-        System.out.println("Pulgadas de " + nombre + modelo + ": " + pulgadas);
+        System.out.println("Pulgadas de " + nombre +" "+ modelo + ": " + pulgadas);
         return pulgadas;
     }
 
@@ -18,12 +20,14 @@ public class SmartTv extends Dispositivo implements Internet, Energia {
 
     @Override
     public void autenticacion() {
-        System.out.println("Dispositivo conectado");
+        System.out.println("Estado de autenticación de red: "
+                + (autenticacion ? "Dispositivo aceptado" : "Dispositivo rechazado"));
     }
 
     @Override
     public void dispositivoEnchufado() {
-        System.out.println("Dispositivo " + nombre + modelo + " conectado, no lo desenchufe mientras esté en funcionamiento");
+        System.out.println("Estado de enchufado: "
+                + (enchufado ? "El dispositivo está listo para usarse" + "\n" : ""));
     }
 
 }
