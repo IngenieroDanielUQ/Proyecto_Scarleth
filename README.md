@@ -1,11 +1,11 @@
 # proyecto_scarleth
 
-Descripciín basisca de su Proyecto de POO ...
+ Taller Interfaces: Exposición personalizada
 
 # Autores
 
-- Autor 1
-- Autor 2
+- Autor: Héctor Daniel González Sánchez
+- Co-autor: Maicol Steven Páez Cruz
 
 # Herramientas
 
