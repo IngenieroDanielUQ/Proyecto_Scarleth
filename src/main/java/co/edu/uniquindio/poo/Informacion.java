@@ -11,6 +11,7 @@ public class Informacion {
     }
 
     public String getNombre() {
+        System.out.println("Nombre de la mascota: " + nombre);
         return nombre;
     }
 
@@ -19,6 +20,7 @@ public class Informacion {
     }
 
     public int getEdad() {
+        System.out.println("La edad de " + nombre + " es: " + edad + " años");
         return edad;
     }
 
