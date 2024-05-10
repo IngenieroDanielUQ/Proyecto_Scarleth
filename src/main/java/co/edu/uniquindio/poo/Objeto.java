@@ -18,14 +18,12 @@ public class Objeto {
         this.conexion = conexion;
     }
     public String getNombre() {
-        System.out.println("Nombre del Vehiculo: " + nombre);
         return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     public String getModelo() {
-        System.out.println("Modelo del Vehiculo: " + modelo);
         return modelo;
     }
     public void setModelo(String modelo) {

@@ -2,27 +2,20 @@ package co.edu.uniquindio.poo;
 
 //Clase padre Dispositivo
 public class Dispositivo {
-    protected  String nombre;
-    protected  String modelo;
+    protected String nombre;
+    protected String modelo;
     protected boolean sincronizacion;
     protected boolean conexion;
     protected boolean autenticacion;
     protected boolean enchufado;
 
-    
-
-    public Dispositivo(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean autenticacion,
-            boolean enchufado) {
+    public Dispositivo(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean autenticacion,boolean enchufado) {
         this.nombre = nombre;
         this.modelo = modelo;
         this.sincronizacion = sincronizacion;
         this.conexion = conexion;
         this.autenticacion = autenticacion;
         this.enchufado = enchufado;
-    }
-
-    public Dispositivo(String nombre2, String modelo2, boolean conexion2, boolean autenticacion2, boolean enchufado2) {
-        //TODO Auto-generated constructor stub
     }
 
     public String getNombre() {
@@ -42,7 +35,6 @@ public class Dispositivo {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-
 
     public boolean isAutenticacion() {
         return autenticacion;
@@ -67,7 +59,7 @@ public class Dispositivo {
     public void setConexion(boolean conexion) {
         this.conexion = conexion;
     }
-    
+
     public boolean isEnchufado() {
         return enchufado;
     }
