@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-//Clase padre Dispositivo
+//Clase padre objeto
 public class Objeto {
     protected  String nombre;
     protected  String modelo;
