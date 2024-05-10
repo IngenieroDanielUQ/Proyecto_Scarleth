@@ -27,7 +27,7 @@ public class SmartTv extends Dispositivo implements Internet, Energia {
     @Override
     public void dispositivoEnchufado() {
         System.out.println("Estado de enchufado: "
-                + (enchufado ? "El dispositivo está listo para usarse" + "\n" : ""));
+                + (enchufado ? "El dispositivo está listo para usarse": ""));
     }
 
 }

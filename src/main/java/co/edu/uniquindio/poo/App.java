@@ -7,9 +7,9 @@ package co.edu.uniquindio.poo;
 public class App {
     public static void main(String[] args) {
 
-        Telefono miTelefono = new Telefono("Xiaomi", "Redmi Note 9S", true, false, true, true);
-        Automovil miAutomovil = new Automovil("Rogelio", "Twingo", "2x2", false);
-        Laptop miLaptop = new Laptop("Lenovo", "IdeaPad5", true, false, true, 6);
+        Telefono miTelefono = new Telefono("Xiaomi", "Redmi Note 9S", true, true, true, true);
+        Automovil miAutomovil = new Automovil("Rogelio", "Twingo", "4x2", false);
+        Laptop miLaptop = new Laptop("Lenovo", "IdeaPad5", true, true, false, 6);
         SmartTv miSmartTv = new SmartTv("LGTV", "Oled 2023", false, false, false, false, 67);
 
         miTelefono.getNombre();
