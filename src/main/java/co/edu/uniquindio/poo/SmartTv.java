@@ -3,9 +3,9 @@ package co.edu.uniquindio.poo;
 public class SmartTv extends Dispositivo implements Internet, Energia {
     private int pulgadas;
 
-    public SmartTv(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean autenticacion,
+    public SmartTv(String nombre, String modelo, boolean conexion, boolean autenticacion,
             boolean enchufado, int pulgadas) {
-        super(nombre, modelo, sincronizacion, conexion, autenticacion, enchufado);
+        super(nombre, modelo, conexion, autenticacion, enchufado);
         this.pulgadas = pulgadas;
     }
 

@@ -3,9 +3,9 @@ package co.edu.uniquindio.poo;
 public class Laptop extends Dispositivo implements Bluetooth, Internet, Energia {
     private int duracionBateria;
 
-    public Laptop(String nombre, String modelo, boolean sincronizacion, boolean conexion, boolean enchufado,
+    public Laptop(String nombre, String modelo, boolean conexion, boolean enchufado,
             int duracionBateria) {
-        super(nombre, modelo, sincronizacion, conexion, enchufado, enchufado);
+        super(nombre, modelo, conexion, enchufado, enchufado);
         this.duracionBateria = duracionBateria;
     }
 

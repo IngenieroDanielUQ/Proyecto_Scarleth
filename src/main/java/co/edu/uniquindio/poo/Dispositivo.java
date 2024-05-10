@@ -21,6 +21,10 @@ public class Dispositivo {
         this.enchufado = enchufado;
     }
 
+    public Dispositivo(String nombre2, String modelo2, boolean conexion2, boolean autenticacion2, boolean enchufado2) {
+        //TODO Auto-generated constructor stub
+    }
+
     public String getNombre() {
         System.out.println("Nombre del dispositivo: " + nombre);
         return nombre;
