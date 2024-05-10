@@ -2,7 +2,7 @@
 
 Descripción basica de su Proyecto de POO ...
 
-Ejericicios de implementacion de las interfaces en Java, evidenciados, en una clase perro, gato y pato.
+Ejercicios de implementacion de las interfaces de Java aplicados a las clases perro, gato y pato.
 
 # Autores
 
