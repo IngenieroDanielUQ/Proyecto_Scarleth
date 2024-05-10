@@ -8,13 +8,13 @@ public class Gato extends Informacion implements Animal{
 
     @Override
     public void emitirSonido() {
-        // Implementacion del método emitirSonido para una clase perro
+        // Implementacion del método emitirSonido para una clase gato
         System.out.println(nombre +" dice: ¡Miau! ");
     }
 
     @Override
     public void comer() {
-        // Implementacion del método comer para una clase perro
+        // Implementacion del método comer para una clase gato
         System.out.println(nombre + " es carnívoro" + "\n");
     }
     

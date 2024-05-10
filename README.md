@@ -1,11 +1,12 @@
 # proyecto_scarleth
 
-Descripciín basisca de su Proyecto de POO ...
+Descripción basica de su Proyecto de POO ...
+
+Ejericicios de implementacion de las interfaces en Java, evidenciados, en una clase perro, gato y pato.
 
 # Autores
 
-- Autor 1
-- Autor 2
+- Autor: Hector Daniel Gonzalez Sanchez
 
 # Herramientas
 
